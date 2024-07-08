@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="bin\images\Cursor_StbD6DLrsW.gif" alt="Cursor Animation">
+  <img src="bin\images\Cursor_StbD6DLrsW.gif" alt="Cursor Animation" autoplay>
 </p>
 
 

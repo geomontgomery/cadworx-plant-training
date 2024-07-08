@@ -60,7 +60,7 @@ How to connect to a CADWorx Config file (.cfg) and a CADWorx Project File, (.prj
   > _Note: before launching, consider right clicking the icon, going to properties, and setting /nologo on the shortcut to remove the AutoCAD startup logo._
   1. Download the training.zip to your desktop and unzip.
   2. Click the CADWorx® Plant icon on the desktop  
-![CADWorx Plant Icon](bin\images\explorer_X4U6jG0SIt.png)  
+![CADWorx Plant Icon](bin/images/explorer_X4U6jG0SIt.png)  
      a. Optional: If it doesn't launch, you may run the setup profile utility:  
      ![Setup Profile Utility](bin\images\CADWorx_Setup_Profile_2ptfUritzk.png)  
      b. Optional: you might need to run the CADWorx64Wrapper batch file **(as an administrator)**:  

@@ -3,6 +3,11 @@
   <img src="bin\images\2b94ba08-bb0e-49fe-977f-6727fdb592cc.png" alt="chrome_rO5TB10M4C">
 </p>
 
+<p align="center">
+  <img src="bin\images\Cursor_StbD6DLrsW.gif" alt="Cursor Animation">
+</p>
+
+
 - [CADWorx Plant Training](#cadworx-plant-training)
   - [Session 1: Core Competency](#session-1-core-competency)
     - [Introduction (30 minutes)](#introduction-30-minutes)

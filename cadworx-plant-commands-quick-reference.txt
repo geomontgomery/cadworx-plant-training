@@ -1,0 +1,130 @@
+// Last Update: 2024-07-08
+Visual Items
+
+DISPSILH 1		Displays silouette (outline) on piping.
+ISOLINES 0		Removes additional lines that define a cylinder.
+REGEN			Regenerates the CAD workspace view.
+CTRL + 0 		Expert mode, gives more screen real estate.
+MENUBAR 1		Shows the main menu bar.
+RIBBON 1		Shows the Ribbon.
+Tools > Customize > Edit program parameters - save the text file to edit your common shortcuts.
+REINIT			Reinitialize the pgp file without closing and opening acad.
+CONVERTENHANCED		Displays pipe in enhanced mode (shows bolts and wall thickness)
+CONVERTISO		Displays pipe in single line iso mode.
+CONVERTDOUBLE		Displays pipe in double line iso mode.
+CONVERTSOLID		Displays pipe in standard 3D mode.
+GRIPSIZE 7 		makes grips larger or smaller.
+PICKBOX 8 		makes your pickbox larger or smaller.
+CURSORTYPE 1    makes your cursor a mouse cursor.
+APERTURE		makes snap attraction distance larger or smaller.
+Z <ENTER> A <ENTER> Zoom to all components in the model.
+VIEWCUBE		Turns the viewcube on or off.
+SELECTIONEFFECT Turns off glowy selection effect
+SELECTIONEFFECTCOLOR  Changes glowy color of your selected items.
+
+Setting up CADWorx
+
+SETUP			Opens the CADWorx setup dialog.
+SETSPEC			Opens the CADWorx specification dialog.	
+NUMBERSETUP		Used to define line numbering system.  
+NUMBERASSIGN	Assigns the currently defined line number to a selection of components.
+BOMSETUP		Sets up the look of your bill of material.
+C2A             Sets size, spec, and line number based on selected component.
+SPECEDIT		Opens the specification editor.
+CLASHVIEW		Opens the clash detection palette.
+SPECVIEW		Opens the specification palette.
+
+Creating Pipe and Components
+
+OSNAP			Edit currently used snaps. Recommend END and NODE snaps only.
+F3 key			Turns object snaps on or off.
+F8 key			Forces orthographic (90 deg) routing.
+PIPW			Begins a pipe routing command. Stay in the command to access the additional autoroute functionality in CADWorx below.
+                L - access component list inside pipw command. 
+                e - elevation inside pipw command, and e, a, b to go to BOP.
+                p - change working two dimensional plane inside the pipw command.
+                c - connects two points inside the pipw command.
+                k - skews pipe direction inside pipw command.
+GENERIC			Adds CADWorx data to any CAD 3D solid.
+ENGENERIC		Adds an equipment nozzle to route from that generates an isometric continuation.
+ELEMENT			Adds a CAESAR II "element" to bridge two components.
+USERCREATE		Creates a custom CADWorx component based of a block you select.
+GLBF			Places a flanged globe valve.
+FLGW			Places a flanged weld neck.  
+INSERTASSEMBLY	Inserts a created assembly.
+
+Selection filters
+
+all				type "all" with a selection pickbox. Selects all while in a selection mode
+p 	 			type "p" with a selection pickbox. selects previous while in a selection mode
+M2P				type "m2p" when picking a point. It picks the middle point between 2 selected points.
+point filters			When selecting a point, use .x, .y, or .z.  Pick point, then type in @ <enter>
+mid				type "mid" while selecting, picks the middle of an object.
+per				type "per" while selecting, selects a point perpendicular on the object.
+CE 				Opens component edit window. Same command as double clicking pipe.
+GCE				Global component edit - edit multiple components at once.
+
+Editing components
+
+CHANGESIZE		Change the line size of selected components. 
+AUTOWELD		Adds weld components to the model.	
+WELDTOTAL		Counts the # of CADWorx weld components and linear inches of weld.
+TOPADD			Adds topworks (valve operator) to a selected valve.
+TOPCHG			Changes topworks (valve operator) of a selected valve.
+RELOADPROJECTFILE	Reloads the currently loaded project file, if you made changes to your spec.
+CONVERTFROMPRJDATA	Converts existing modeled components based on latest information in your PRJ.
+MOCORO			Move, copy, or rotate selected components.	
+EXPLODE			Separates selected array or solid into individual components.	
+BURST			Separates selected array or solid into individual components. Retains the object layer.
+BOX				Creates a standard AutoCAD box.
+CHAMFER			Chamfers a 2D or 3D corner.
+ARRAY			Creates a rectangular or polar array	
+3DR				Three dimensional rotate command.
+UPDATELAYERBYLINENUMBERDATA	Changes the current layer based on your layer by line number settings.
+PR				Opens properties of selected component. Set viewport to legacy hidden for easier plotting
+
+Creating Deliverables
+
+BOMEXPORT		Exports bill of material to excel.
+BOMTOTAL		Generates a table bill of material inside AutoCAD.
+NUMBERANNOTATE	Annotates a line number on a drawing
+ELEVANNOTATE	Annotates an elevation on a drawing
+ANOTCOMP		Annotates a Long/Short/Tag description on a drawing.
+TEXTMASK		Masks the background of selected text for easier reading.
+SYSVIS			Turns off bolts, gaskets for plotting.
+INTERSECTIONDISPLAY	Adds cylinder/cylinder lines for better plotting.
+IGO				Isogen out selected line numbers or selected pipe components.
+IGB				Isogen by line number a batch of isometrics. 
+TCG				Calculates total mass and center of gravity.
+VIEWBOX			Inserts a custom view based on two selected points of the corners of a box.
+MVIEW			Creates a modelspace view in paperspace.
+ETRANSMIT		Collects all xrefs loaded into dwg into a zip file. 
+VIEWCLIP <OFF>	Turns a viewclipped viewport off.
+ZL				Zoomlock a selected modelspace view that was created with MVIEW.
+
+Misc commands
+
+CLOSEALLOTHER	Closes all other drawings.
+SAVEALL			Saves all open drawings.
+XDP				Shows CADWorx specific data in your command window of a component.
+XDWGFADECTL		set light or darkness of loaded xrefs
+XLOADCTL 2		Demand-load xrefs
+XLOADPATH		Change where xrefs are saved when xloadctl = 2
+EXA				Reload all loaded xrefs.
+XO 				Opens selected XREF.
+XA				Attach/overlay selected XREF.
+ARX				A way to see all CADWorx commands, including those not in PGP.
+
+Commands that help with issues with models
+
+AUDIT			Fix for errors in your model. 
+REASSOCIATEMODEL	Fix for centerline becoming unassociated with 3D pipe, and other graphical errors.
+AUTOTESTSPEC	Generate components from a loaded spec to QA the spec.
+ORBITAUTOTARGET 0	Supposedly helps with crashing
+RECOVER			Performs audit on drawing not open.	
+WBLOCK			Export selected objects to new drawing. Helpful for error prone drawing to start fresh.
+DBFGEN			Reads selected components to a database.
+DBFIN			Writes selected components to a new drawing.
+2DREP			Creates a two dimensional representation of a 3D model.
+STOPSIGN		Creates a break between two generated isometrics.	
+LAUNCHICONFIGURE	Launches the I-configure administration tool.

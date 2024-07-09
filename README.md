@@ -1,6 +1,6 @@
 # 1. CADWorx® Plant Training
 <p align="center">
-  <img src="bin/**images**/2b94ba08-bb0e-49fe-977f-6727fdb592cc.png" alt="chrome_rO5TB10M4C">
+  <img src="bin/images/2b94ba08-bb0e-49fe-977f-6727fdb592cc.png" alt="chrome_rO5TB10M4C">
 </p>
 
 - [1. CADWorx® Plant Training](#1-cadworx-plant-training)
@@ -15,18 +15,19 @@
       - [1.3.1.3. Connecting to a Config File](#1313-connecting-to-a-config-file)
       - [1.3.1.4. Connecting to a Project File](#1314-connecting-to-a-project-file)
       - [1.3.1.5. Creating an initial route: Working with the primary functions of CADWorx](#1315-creating-an-initial-route-working-with-the-primary-functions-of-cadworx)
-    - [1.3.2. Section Review](#132-section-review)
-    - [1.3.3. Hands-On Practice (1 hour)](#133-hands-on-practice-1-hour)
-    - [1.3.4. Core Features (2 hours)](#134-core-features-2-hours)
-    - [1.3.5. Hands-On Practice (1 hour)](#135-hands-on-practice-1-hour)
-    - [1.3.6. Review and Wrap-Up (30 minutes)](#136-review-and-wrap-up-30-minutes)
-  - [1.4. Session 2: Advanced Features and Practical Applications](#14-session-2-advanced-features-and-practical-applications)
-    - [1.4.1. Recap and Introduction to Advanced Features (30 minutes)](#141-recap-and-introduction-to-advanced-features-30-minutes)
-    - [1.4.2. Advanced Features (2 hours)](#142-advanced-features-2-hours)
-    - [1.4.3. Hands-On Practice (1 hour)](#143-hands-on-practice-1-hour)
-    - [1.4.4. Practical Applications (2 hours)](#144-practical-applications-2-hours)
-    - [1.4.5. Hands-On Practice (1 hour)](#145-hands-on-practice-1-hour)
-    - [1.4.6. Review and Wrap-Up (1 hour)](#146-review-and-wrap-up-1-hour)
+    - [1.3.2. Auto-Routing Options Review](#132-auto-routing-options-review)
+    - [1.3.3. Palette Review](#133-palette-review)
+  - [1.4. Hands-On Practice](#14-hands-on-practice)
+    - [1.4.1. Construct Civil/Structural Foundation](#141-construct-civilstructural-foundation)
+    - [1.4.2. Hands-On Practice (1 hour)](#142-hands-on-practice-1-hour)
+    - [1.4.3. Review and Wrap-Up (30 minutes)](#143-review-and-wrap-up-30-minutes)
+  - [1.5. Session 2: Advanced Features and Practical Applications](#15-session-2-advanced-features-and-practical-applications)
+    - [1.5.1. Recap and Introduction to Advanced Features (30 minutes)](#151-recap-and-introduction-to-advanced-features-30-minutes)
+    - [1.5.2. Advanced Features (2 hours)](#152-advanced-features-2-hours)
+    - [1.5.3. Hands-On Practice (1 hour)](#153-hands-on-practice-1-hour)
+    - [1.5.4. Practical Applications (2 hours)](#154-practical-applications-2-hours)
+    - [1.5.5. Hands-On Practice (1 hour)](#155-hands-on-practice-1-hour)
+    - [1.5.6. Review and Wrap-Up (1 hour)](#156-review-and-wrap-up-1-hour)
 - [2. Addendum](#2-addendum)
   - [2.1. About Me](#21-about-me)
 
@@ -191,7 +192,7 @@ place olet on the top pipe quadrant
 ```
 ![CADWorx Plant Training](bin/images/acad_4xuGtCaonJ.gif)
 
-### 1.3.2. Section Review
+### 1.3.2. Auto-Routing Options Review
 In this section we routed some components using various tools in the autoroute command. Let's take a closer look at the various commands available.
 
 While Autorouting from NO start point, or the END of an open component, here are the various commands available:
@@ -231,48 +232,102 @@ While Autorouting from inline a pipe component, here are the various commands av
 
 <center><span style="color:orange; font-size: 2em;">**Knowledge Check!**</span></center>
 
-### 1.3.3. Hands-On Practice (1 hour)
-- Guided Exercises: Simple tasks to practice the basic operations
-- Q&A Session: Address any initial questions or concerns
 
-### 1.3.4. Core Features (2 hours)
-- Feature 1: Detailed explanation and demonstration of a core feature
-- Feature 2: Detailed explanation and demonstration of another core feature
-- Feature 3: Detailed explanation and demonstration of an additional core feature
+### 1.3.3. Palette Review
 
-### 1.3.5. Hands-On Practice (1 hour)
+**Spec View Palette**
+
+<p align="center">
+  <img src="bin/images/ShareX_zPE60QYb5I.png" alt="CADWorx Plant Training">
+</p>
+
+| Number | |
+|--------|---|
+| 1      |Spec View Settings (14,15,16)|
+| 2      |Open Spec Editor   |
+| 3      |Line Number Setup   |
+| **4**      |c:C2A (Set size, spec, line num)    |
+| **5**      |Current prj file   |
+| **6**      |Current Main size   |
+| **7**      |Current Reduction size   |
+| **8**      |Current Specification   |
+| **9**      |Current Line Number   |
+| 10     |Search line numbers   |
+| 11     |Search components   |
+| 12     |Current components based on main/reduction and spec   |
+| 13     |Custom data fields in PRJ file   |
+| 14     |Color Options, how the component list (12) is colored   |
+| 15     |Display Options, how the component list (12) is listed   |
+| **16**     |Component Options, which components are shown based on type   |
+
+**Line View Palette**
+
+
+
+**Discontinuity View Palette**
+
+
+
+**Clash Detection Palette**
+
+
+
+**Insulation Palette**
+
+
+
+
+
+## 1.4. Hands-On Practice
+
+
+<p align="center">
+  <img src="bin\images\SumatraPDF_vv5jLDC2zS.png" alt="CADWorx Plant Training">
+</p>
+
+Guided excersise to construct a small skid piping model for a fictional project.
+
+ - 2 pumps
+ - Horizontal vessel
+ - Vertical Vessel
+ - ~6 pipe routes
+
+### 1.4.1. Construct Civil/Structural Foundation
+Create the 
+
+### 1.4.2. Hands-On Practice (1 hour)
 - Guided Exercises: Tasks to practice using the core features
 - Q&A Session: Address questions related to core features
 
-### 1.3.6. Review and Wrap-Up (30 minutes)
+### 1.4.3. Review and Wrap-Up (30 minutes)
 - Recap of the Day: Summary of what was covered
 - Q&A Session: Final questions for the day
 - Preview of Day 2: What to expect in the next session
 
-## 1.4. Session 2: Advanced Features and Practical Applications
+## 1.5. Session 2: Advanced Features and Practical Applications
 
-### 1.4.1. Recap and Introduction to Advanced Features (30 minutes)
+### 1.5.1. Recap and Introduction to Advanced Features (30 minutes)
 - Review of Day 1: Quick recap of core competencies
 - Introduction to Advanced Features: Overview of what will be covered
 
-### 1.4.2. Advanced Features (2 hours)
+### 1.5.2. Advanced Features (2 hours)
 - Advanced Feature 1: Detailed explanation and demonstration
 - Advanced Feature 2: Detailed explanation and demonstration
 - Advanced Feature 3: Detailed explanation and demonstration
 
-### 1.4.3. Hands-On Practice (1 hour)
+### 1.5.3. Hands-On Practice (1 hour)
 - Guided Exercises: Tasks to practice using advanced features
 - Q&A Session: Address questions related to advanced features
 
-### 1.4.4. Practical Applications (2 hours)
+### 1.5.4. Practical Applications (2 hours)
 - Real-World Scenarios: Applying CADWorx® to practical, real-world scenarios relevant to the users
 - Case Studies: Examples and case studies of successful CADWorx® usage
 
-### 1.4.5. Hands-On Practice (1 hour)
+### 1.5.5. Hands-On Practice (1 hour)
 - Guided Exercises: Tasks based on real-world scenarios and case studies
 - Q&A Session: Address questions related to practical applications
 
-### 1.4.6. Review and Wrap-Up (1 hour)
+### 1.5.6. Review and Wrap-Up (1 hour)
 - Recap of the Day: Summary of what was covered
 - Q&A Session: Final questions for the day
 - Next Steps: Resources for further learning and support

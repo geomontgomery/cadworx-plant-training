@@ -19,18 +19,11 @@
     - [1.3.3. Palette Review](#133-palette-review)
   - [1.4. Hands-On Practice](#14-hands-on-practice)
     - [1.4.1. Construct Civil/Structural Foundation](#141-construct-civilstructural-foundation)
-      - [1.4.1.1. Create the steel frame and foundation.](#1411-create-the-steel-frame-and-foundation)
-    - [1.4.2. Hands-On Practice (1 hour)](#142-hands-on-practice-1-hour)
-    - [1.4.3. Review and Wrap-Up (30 minutes)](#143-review-and-wrap-up-30-minutes)
-  - [1.5. Session 2: Advanced Features and Practical Applications](#15-session-2-advanced-features-and-practical-applications)
-    - [1.5.1. Recap and Introduction to Advanced Features (30 minutes)](#151-recap-and-introduction-to-advanced-features-30-minutes)
-    - [1.5.2. Advanced Features (2 hours)](#152-advanced-features-2-hours)
-    - [1.5.3. Hands-On Practice (1 hour)](#153-hands-on-practice-1-hour)
-    - [1.5.4. Practical Applications (2 hours)](#154-practical-applications-2-hours)
-    - [1.5.5. Hands-On Practice (1 hour)](#155-hands-on-practice-1-hour)
-    - [1.5.6. Review and Wrap-Up (1 hour)](#156-review-and-wrap-up-1-hour)
-- [2. Addendum](#2-addendum)
-  - [2.1. About Me](#21-about-me)
+    - [1.4.2. Construct Equipment](#142-construct-equipment)
+    - [1.4.3. Route Piping](#143-route-piping)
+    - [1.4.5. Generate Orthographics](#145-generate-orthographics)
+    - [1.4.6. Generate Isometrics](#146-generate-isometrics)
+    - [1.4.7. Review and Wrap-Up](#147-review-and-wrap-up)
 
 ## 1.1. About
 This document outlines a two-day training course for CADWorx® Plant Professional by Hexagon®, a 3D plant design and modeling software that installs on top of AutoCAD® as an extension.  
@@ -231,8 +224,18 @@ While Autorouting from inline a pipe component, here are the various commands av
 | <span style="color:orange">**P**</span>ipe end point distance   |toggle pipe end point measuring from            |
 | insertion <span style="color:orange">**J**</span>ustification   |select part on your component to measure distance from             |
 
+Here are other useful commands/utilities in AutoCAD when routing pipe:
+- Cadworx-plant-commands-quick-reference.txt
+- point filters (.x, .y, .z)
+- M2P
+- 
+
+
+
 <center><span style="color:orange; font-size: 2em;">**Knowledge Check!**</span></center>
 
+
+<span style="color:blue">**Before we continue, let's review the Piping Rules located in the SETUP dialog.**</span>
 
 ### 1.3.3. Palette Review
 
@@ -331,7 +334,7 @@ While Autorouting from inline a pipe component, here are the various commands av
   <img src="bin\images\SumatraPDF_vv5jLDC2zS.png" alt="CADWorx Plant Training">
 </p>
 
-Guided excersise to construct a small skid piping model for a fictional project.
+Guided exercise to construct a small skid piping model for a fictional project.
 
  - 2 pumps
  - Horizontal vessel
@@ -340,14 +343,13 @@ Guided excersise to construct a small skid piping model for a fictional project.
 
 ### 1.4.1. Construct Civil/Structural Foundation
 
-Here's what we'll do in this section
+Here's what we'll do in this section:
 
 - Make a steel frame out of line segments, using SFRAME
 - Create W-shape columns and Beams on the frame
 - Create a Foundation with Piers, attached to the columns.
 - Create secondary concrete pads for pumps.
 
-#### 1.4.1.1. Create the steel frame and foundation.
 1. Open CADWorx Structure.
 2. Save a new drawing in training\e_projects\S1.dwg
 3. c:SFRAME, using the guidelines below.
@@ -413,53 +415,220 @@ Steps 5 and 6 below.
 </p>
 
 
-### 1.4.2. Hands-On Practice (1 hour)
-- Guided Exercises: Tasks to practice using the core features
-- Q&A Session: Address questions related to core features
 
-### 1.4.3. Review and Wrap-Up (30 minutes)
-- Recap of the Day: Summary of what was covered
-- Q&A Session: Final questions for the day
-- Preview of Day 2: What to expect in the next session
+7. Create the piers and foundation
 
-## 1.5. Session 2: Advanced Features and Practical Applications
+```
+Pick foundations from the ribbon
+Choose Pier And Slab option
+Turn off Grout
+Pier Height > 1'-10"
+Pier > Check "Component Extents"
+Slab Thickness > 12"
+Slab > Check "Component Extents"
+Slab > Check "Combined"
+Place By > "Select Columns"
+Select all columns, and enter
+```
 
-### 1.5.1. Recap and Introduction to Advanced Features (30 minutes)
-- Review of Day 1: Quick recap of core competencies
-- Introduction to Advanced Features: Overview of what will be covered
+<p align="center">
+  <img src="bin/images/acad_u7xOm9AGCP.gif" alt="Generated Image">
+</p>
 
-### 1.5.2. Advanced Features (2 hours)
-- Advanced Feature 1: Detailed explanation and demonstration
-- Advanced Feature 2: Detailed explanation and demonstration
-- Advanced Feature 3: Detailed explanation and demonstration
 
-### 1.5.3. Hands-On Practice (1 hour)
-- Guided Exercises: Tasks to practice using advanced features
-- Q&A Session: Address questions related to advanced features
+8. Move the piers/foundation so the foundation is at 0" elevation.
+9. Cut the columns to match the piers. Delete the cut columns inside the Piers.
 
-### 1.5.4. Practical Applications (2 hours)
-- Real-World Scenarios: Applying CADWorx® to practical, real-world scenarios relevant to the users
-- Case Studies: Examples and case studies of successful CADWorx® usage
+<p align="left">
+  <img src="bin/images/acad_7uUM0Rdw8Y.png" alt="Generated Image">
+</p>
 
-### 1.5.5. Hands-On Practice (1 hour)
-- Guided Exercises: Tasks based on real-world scenarios and case studies
-- Q&A Session: Address questions related to practical applications
+Step 8 and 9 below.
+> _Note: Continue cutting all 9 columns._
 
-### 1.5.6. Review and Wrap-Up (1 hour)
-- Recap of the Day: Summary of what was covered
+<p align="center">
+  <img src="bin/images/acad_auH1NVLY5N.gif" alt="Generated Image">
+</p>
+
+10. Remove the column and beams closest to the origin, they are not needed.
+
+<p align="center">
+  <img src="bin/images/acad_8XkM1CcuVM.png" alt="Generated Image">
+</p>
+
+11. c:STREX on the foundation, and remove the open pier.
+
+<p align="center">
+  <img src="bin/images/acad_Oa1W2rtpxw.gif" alt="Generated Image">
+</p>
+
+> _Note: You can also use c:SELECTSIMILAR on a line segment, and delete those at this point._
+
+<center><span style="color:orange; font-size: 2em;">**Knowledge Check!**</span></center>
+
+### 1.4.2. Construct Equipment
+
+Here's what we'll do in this section:
+
+- Create a pump dwg using CADWorx Equipment
+- Import existing Vertical Vessel dwg from vendor.
+- Import existing Horizontal Vessel dwg from vendor.
+
+1. Open CADWorx Equipment.
+2. Save a new drawing in training\e_projects\E-P100.dwg
+3. Create a Centrifugal pump with the following edits to the P-4713 template.
+
+```
+SUCTION > 6" #300, 3" projection
+DISCHARGE > 4" #300, 10" projection
+DISCHARGE > edit "Distance" A > 10".
+``` 
+
+4. Use c:XA to insert S1.dwg as an overlay, with 0,0,0 insertion point.
+5. Move P100 to be aligned with the suction facing north. Pump pad should be 1' away from slab corner.
+6. Save dwg.
+7. Save as, and rename to E-P200.dwg. 
+8. Move the pump in E-P200.dwg to be parallel to P100, ~2'-0" distance apart.
+9. Save E-P200.dwg.
+  
+**Now, we'll ensure the Vertical and Horizontal vessels are properly aligned.**
+
+10. c:XA to insert the two drawings in training\vendor equipment.
+11. Use your point filters (<span style="color: orange;">.x</span>, <span style="color: orange;">.y</span>, <span style="color: orange;">.z</span>) to properly align the equipment. (And <span style="color: orange; font-weight: bold;">M2P</span>). See the following equipment guidelines.
+
+> _Note: point filters and the M2P command are referred to as "running object snaps". These can be invoked while placing components by either typing them directly, or using SHIFT + RIGHT CLICK._  
+```
+E-V101 should sit on top of the 1st steel deck.  
+E-V101's 8" horizontal nozzle should be aligned between the suction of both pumps.
+E-T100 should be centered in the south east quadrant.
+E-T100 should be elevated where the lugs match the TOS.
+```
+
+> _Note: There may not be any girders to support the equipment for now.  Try adding girders on your own later._  
+
+**Here are some tips on using XREFS:**
+
+| Command  | Function |
+|----------|----------|
+| <span style="color: orange;">XA</span>    | "XREF Attach" > pick a dwg to insert as an xref.   |
+| <span style="color: orange;">XO</span>    | "XREF Open" > select a xref in your model, to open that drawing.    |
+| <span style="color: orange;">EXA</span>   | "XREF Reload" (EXACRELOAD) > reloads **ALL** xrefs in your drawing.   |
+
+12. Save your changes to all drawings. Close CADWorx equipment, and go back to CADWorx plant.
+
+### 1.4.3. Route Piping
+
+Here's what we'll do in this section:
+
+- Create piping routes per direction
+- Use line numbers for each generated route
+
+> _Note: Substitute the spec in the line number for a similar spec in your project file._
+>
+> A1 = #150, B1 = #300, D1 = #600
+>
+> Keep in mind your line isolation settings to assist your routing.
+
+PIPE ROUTES:
+
+<span style="color: orange;">**8"-A1-G-101A**</span>
+- From top of Vertical vessel, to North west corner, off skid.
+- Line contains Gate, Control, Gate, Check.
+- 6" bypass over control with globe valve.
+- Use point filters to position route over existing steel for pipe supports.
+- BOP should support 4" pipe shoe.
+- Exit skid with open flange.
+
+<p align="center">
+  <img src="bin/images/SumatraPDF_qWLQrSGefI.png" alt="CADWorx Plant Training">
+</p>
+
+<span style="color: orange;">**6"-A1-WG-108A**</span>
+- Start from nozzle on top of horizontal vessel.
+- Add ball valve on fitting makeup off nozzle.
+- Position flange break before steel beam for future hanger support.
+- Reduce elevation down to 4" BOP.
+- Add Gate, Control, Gate, Check, and exit boundary with open flange end.
+- Add 2" socketwelded bypass across control with socketed globe valve.
+
+<p align="center">
+  <img src="bin/images/SumatraPDF_mMMVN8iSyB.png" alt="CADWorx Plant Training">
+</p>
+
+
+<span style="color: orange;">**4"-A1-W-109A**</span>
+- start from bottom of horiz. vessel.
+- Add ball valve in horiz. position, ensure skirt has clearance.
+- Exit line on west end with open flange.
+
+<p align="center">
+  <img src="bin/images/SumatraPDF_Gcx1AghoUZ.png" alt="CADWorx Plant Training">
+</p>
+
+
+
+<span style="color: orange;">**8"-B1-HC-104A**</span>
+- This route joins the horizontal outlet of the horizontal vessel to the suction of both pumps.
+- Use 8" x 6" eccentric reducers at the pump inlet, flat side on top.
+
+<p align="center">
+  <img src="bin/images/SumatraPDF_68mOIV23hw.png" alt="CADWorx Plant Training">
+</p>
+
+
+
+
+<span style="color: orange;">**8”-B1-HC-102A**</span>
+- Start from nozzle located on east side of the vertical vessel. 
+- Add ball valve with fitting makeup.
+- Exit skid with open flange, standard 4" BOP elevation.
+- 
+
+<p align="center">
+  <img src="bin/images/SumatraPDF_mOv0212gBm.png" alt="CADWorx Plant Training">
+</p>
+
+
+<span style="color: orange;">**6”-D1-HC-104A**</span>
+- This route joins the discharge of both pumps into the vertical vessel.
+- Use 6X4 concentric reducers off the pumps.
+- Add a 6" pup after the reducer, and a 3/4" TOL centered on it for a future instrument.
+- Add a vertical ball, check, then join the lines into the vertical vessel.
+
+
+<p align="center">
+  <img src="bin/images/SumatraPDF_qqIO77lTJT.png" alt="CADWorx Plant Training">
+</p>
+
+
+
+> _Note: After completing your routes, check discontinuity view and clash management._
+>
+> _Consider going back now, and adding in the girders for the equipment._
+>
+> _Look for other opportunities to enhance the piping model, adding vents & drains, supports, etc._
+
+### 1.4.5. Generate Orthographics
+
+Here's what we'll do in this section:
+
+- Use c:3DCLIP to generate orthographics for each vessel.
+- Use c:VIEWBOX to generate plans of the 1st and 2nd decks.
+- Use the VIEWWorx plugin to generate orthos of each line number.
+- Generate and customize Bills of Material
+
+### 1.4.6. Generate Isometrics
+
+Here's what we'll do in this section:
+
+- Use isogen stop signs to break the isometric drawing at specific points.
+- Use ISOGENOUT/ISOGENBATCH to generate isometric views of each line.
+
+### 1.4.7. Review and Wrap-Up
+- Recap of what was covered.
+- Additional Topics?
 - Q&A Session: Final questions for the day
 - Next Steps: Resources for further learning and support
-- Feedback Session: Collect feedback from the users about the training
-
-# 2. Addendum
-
-## 2.1. About Me
-
-This training course is led by George Montgomery, M.E., a CAD Administration Consultant and Leica HDS Technical Sales and Support specialist. With extensive experience in both Leica and CAD systems, George brings a wealth of knowledge to this training:
-
-- Expertise in Leica software and hardware sales and support
-- Experience providing on-site training for Leica HDS and AutoCAD Plant 3D
-- Proficiency in CAD administration, training, and support
-- Background in generating project-specific templates and providing consulting feedback on 3D plant specifications
-
-George's diverse skill set in both Leica and CAD systems ensures a comprehensive and practical approach to this CADWorx® Plant training course.
+  - support.ecedesign.com
+  - support@ecedesign.com
+  - www.ecedesign.com

@@ -8,8 +8,8 @@
   - [1.2. Before you Begin](#12-before-you-begin)
     - [1.2.1. Introduction](#121-introduction)
       - [1.2.1.1. Products](#1211-products)
-  - [1.3. Session 1: Core Competency](#13-session-1-core-competency)
-    - [1.3.1. Getting Started with CADWorx® (2 hours)](#131-getting-started-with-cadworx-2-hours)
+  - [1.3. Session 1: Fundamental Skills](#13-session-1-fundamental-skills)
+    - [1.3.1. Getting Started with CADWorx® (est 2 hours)](#131-getting-started-with-cadworx-est-2-hours)
       - [1.3.1.1. In this section](#1311-in-this-section)
       - [1.3.1.2. Launching and setup](#1312-launching-and-setup)
       - [1.3.1.3. Connecting to a Config File](#1313-connecting-to-a-config-file)
@@ -19,6 +19,7 @@
     - [1.3.3. Palette Review](#133-palette-review)
   - [1.4. Hands-On Practice](#14-hands-on-practice)
     - [1.4.1. Construct Civil/Structural Foundation](#141-construct-civilstructural-foundation)
+      - [1.4.1.1. Create the steel frame and foundation.](#1411-create-the-steel-frame-and-foundation)
     - [1.4.2. Hands-On Practice (1 hour)](#142-hands-on-practice-1-hour)
     - [1.4.3. Review and Wrap-Up (30 minutes)](#143-review-and-wrap-up-30-minutes)
   - [1.5. Session 2: Advanced Features and Practical Applications](#15-session-2-advanced-features-and-practical-applications)
@@ -58,9 +59,9 @@ It assumes the user has a basic understanding of AutoCAD®, and is familiar with
   - MTOWorx: Material takeoff tool for generating accurate material lists
 
 - Objectives of the Training: What the users will learn and achieve by the end of the training
-## 1.3. Session 1: Core Competency
+## 1.3. Session 1: Fundamental Skills
 
-### 1.3.1. Getting Started with CADWorx® (2 hours)
+### 1.3.1. Getting Started with CADWorx® (est 2 hours)
 #### 1.3.1.1. In this section
 - How to connect to a CADWorx Config file (.cfg) and a CADWorx Project File, (.prj)
 - How to use Autorouting in CADWorx
@@ -241,41 +242,86 @@ While Autorouting from inline a pipe component, here are the various commands av
   <img src="bin/images/ShareX_zPE60QYb5I.png" alt="CADWorx Plant Training">
 </p>
 
+> _Note: Many components can be dropped from the command line using their CADWorx command in CEDIT_
+
 | Number | |
 |--------|---|
 | 1      |Spec View Settings (14,15,16)|
 | 2      |Open Spec Editor   |
 | 3      |Line Number Setup   |
-| **4**      |c:C2A (Set size, spec, line num)    |
-| **5**      |Current prj file   |
-| **6**      |Current Main size   |
-| **7**      |Current Reduction size   |
-| **8**      |Current Specification   |
-| **9**      |Current Line Number   |
+| <span style="color:orange">**4**</span>      |c:C2A (Set size, spec, line num)    |
+| <span style="color:orange">**5**</span>      |Current prj file   |
+| <span style="color:orange">**6**</span>      |Current Main size   |
+| <span style="color:orange">**7**</span>      |Current Reduction size   |
+| <span style="color:orange">**8**</span>      |Current Specification   |
+| <span style="color:orange">**9**</span>      |Current Line Number   |
 | 10     |Search line numbers   |
 | 11     |Search components   |
 | 12     |Current components based on main/reduction and spec   |
 | 13     |Custom data fields in PRJ file   |
 | 14     |Color Options, how the component list (12) is colored   |
 | 15     |Display Options, how the component list (12) is listed   |
-| **16**     |Component Options, which components are shown based on type   |
+| <span style="color:orange">**16**</span>     |Component Options, which components are shown based on type   |
 
 **Line View Palette**
 
+<p align="center">
+  <img src="bin/images/ApplicationFrameHost_l9PNBvEAzF.png" alt="CADWorx Plant Training">
+</p>
+
+> _Note: Most of these settings can be controlled via the LINEISOLATE command._    
+> _Consider editing your pgp file for quick access to LINEISOLATE_
+
+| Number | |
+|--------|---|
+| 1      |Line view settings   |
+| **2**      |Select component to isolate   |
+| 3      |Select rows to isolate   |
+| **4**      |Show All   |
+| **5**      |Refresh line view list    |
+| 6      |Full or Partial Isolation   |
+| 7      |Line view list accordion panel   |
+| 8      |Search filter Line view list   |
+| 9      |List of line numbers and properties   |
+| 10     |Advanced Search   |
+
+
+
+**Clash Management Palette**
+<p align="center">
+  <img src="bin/images/ShareX_fpgZ0BOJK9.png" alt="Clash Management Palette">
+</p>
+
+
+| Number | |
+|--------|---|
+| 1      |Toggle clash detection   |
+| 2      |Show or hide clashes   |
+| 3      |Soft Clash Volume list   |
+| 4      |Refresh, delete, zoom, or create new soft clash bodies   |
+| 5      |Refresh hard clashes   |
+| 6      |Zoom to selected clash   |
+
+ _Note: A soft clash volume is typically an empty volume that is reserved for operational use._
 
 
 **Discontinuity View Palette**
 
-
-
-**Clash Detection Palette**
-
-
+<p align="center">
+  <img src="bin/images/acad_l2NNhPLB5J.png" alt="Discontinuity View Palette">
+</p>
 
 **Insulation Palette**
 
+<p align="center">
+  <img src="bin/images/acad_PovZKGyEe4.png" alt="Generated Image">
+</p>
 
+**Pipe Support Modeler**
 
+<p align="center">
+  <img src="bin/images/acad_kNBu2VGiYG.png" alt="Generated Image">
+</p>
 
 
 ## 1.4. Hands-On Practice
@@ -293,7 +339,79 @@ Guided excersise to construct a small skid piping model for a fictional project.
  - ~6 pipe routes
 
 ### 1.4.1. Construct Civil/Structural Foundation
-Create the 
+
+Here's what we'll do in this section
+
+- Make a steel frame out of line segments, using SFRAME
+- Create W-shape columns and Beams on the frame
+- Create a Foundation with Piers, attached to the columns.
+- Create secondary concrete pads for pumps.
+
+#### 1.4.1.1. Create the steel frame and foundation.
+1. Open CADWorx Structure.
+2. Save a new drawing in training\e_projects\S1.dwg
+3. c:SFRAME, using the guidelines below.
+
+<p align="center">
+  <img src="bin/images/acad_KKaRbqr7PW.png" alt="Generated Image">
+</p>
+
+4. Create the Columns and Beams per the following:
+
+**Placing Columns**
+```
+Open shapes dialog, choose wide flange
+Select Member: 10x26
+Select Angle: 90
+Select middle center cardinal point
+Select Group: Columns
+Select Place By: "Select Lines", and click Ok.
+Pick all vertical lines to place beams.
+```
+> _Note: The orientation of the image of the beam is relative to true north._
+
+<p align="center">
+  <img src="bin/images/acad_PqfAUU5P9O.gif" alt="Generated Image">
+</p>
+
+
+**Placing Beams**
+```
+Open shapes dialog, choose wide flange
+Select Member: 8x18
+Select Angle: 0
+Select **TOP** center cardinal point
+Select Group: Beams
+Select Place By: "Select Lines", and click Ok.
+Pick all horizontal lines to place beams.
+```
+
+<p align="center">
+  <img src="bin/images/acad_g5UUoqMO0g.gif" alt="Generated Image">
+</p>
+
+
+> _Note: If you need to edit the section size or other properties, you can edit multiple steel shapes at once by selecting multiple, then double clicking one of the selected._
+
+5. Join the Columns
+
+<p align="left">
+  <img src="bin/images/acad_M5eQQGAG2y.png" alt="Generated Image">
+</p>
+
+
+6. Cope the Beams to the Columns with a welded cope.
+
+<p align="left">
+  <img src="bin/images/acad_iOXyRaw1el.png" alt="Generated Image">
+</p>
+
+Steps 5 and 6 below.
+
+<p align="center">
+  <img src="bin/images/acad_hEZVG7PoMk.gif" alt="Generated Image">
+</p>
+
 
 ### 1.4.2. Hands-On Practice (1 hour)
 - Guided Exercises: Tasks to practice using the core features

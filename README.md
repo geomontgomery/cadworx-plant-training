@@ -30,6 +30,8 @@ This document outlines a two-day training course for CADWorx® Plant Professiona
 The training is broken into two sections and emphasizes quickly learning and applying skills in piping design for new users. It's meant for new CADWorx® Plant end users who are primarly creating Orthographic and Isometric deliverables.  
 It assumes the user has a basic understanding of AutoCAD®, and is familiar with the AutoCAD® command language.
 
+Reference **Legacy CADWorx Plant Training.pdf** for the old training.
+
 ## 1.2. Before you Begin
 - Install AutoCAD® Plant 3D
 - Install CADWorx® Plant
